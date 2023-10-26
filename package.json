@@ -1,0 +1,17 @@
+{
+  "name": "jwc-components",
+  "version": "1.1.1",
+  "description": "Biblioteca de Carregamento de componentes html,javascript",
+  "main": "jwc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jws",
+    "jwc-components",
+    "jwccomponents",
+    "components"
+  ],
+  "author": "jsaplication",
+  "license": "ISC"
+}

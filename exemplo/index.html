@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JWC-Components</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- <div class="menu">
+	<button class="btn jwc_home" onclick="jwc.myElement('.load').route(this,'component','home')">Home</button>
+	<button class="btn jwc_pagina1" onclick="jwc.myElement('.load').route(this,'component','pagina1')">pagina1</button>
+	<button class="btn jwc_pagina2" onclick="jwc.myElement('.load').route(this,'component','pagina2')">pagina2</button>
+</div>
+ -->
+
+<div class="menu">
+	<button class="btn  jwc_click" component="component" pg="home"    content=".load">Home</button>
+	<button class="btn  jwc_click" component="component" pg="pagina1" content=".load">Pagina1</button>
+	<button class="btn  jwc_click" component="component" pg="pagina2" content=".load">Pagina2</button>
+</div>
+
+
+<div class="load"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jwc-components@1.1.1/jwc.js"></script>
+<!-- <script src="http://localhost:3000/jwc.js"></script> -->
+<script>
+	jwc.myElement('.load').component('component/home.html');
+	jwc.state('jwc_active', 'home');
+</script>
+</body>
+</html>
